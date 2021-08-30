@@ -1,10 +1,7 @@
 import './src/css/tailwind.css';
 
 export const onServiceWorkerUpdateReady = () => {
-  const answer = window.confirm(
-    `This application has been updated. ` + `Reload to display the latest version?`
-  );
-  if (answer === true) {
+  if (window.confirm(`This application has been updated. ` + `Reload to display the latest version?`)) {
     window.location.reload();
   }
 };
